@@ -1,0 +1,38 @@
+
+DELETE  https://backend.staffbase.com/api/users/A00123
+//header name: header value
+Authorization: Basic TOKEN
+
+###
+
+GET  https://backend.staffbase.com/api/users
+Authorization: Basic TOKEN
+###
+
+POST https://backend.staffbase.com/api/users 
+//header name: header value
+Authorization: Basic TOKEN
+Content-Type: application/json
+
+{
+    "externalID": "A00123",
+    "emails/primary": "john.smith@company.com",
+    "sendEmail": false,
+    "avatar": "https://boredhumans.b-cdn.net/apes/3313.png",
+    "lastName": "Smith",
+    "firstName": "John",
+    "position": "IT Manager",
+    "department": "IT"
+}
+
+###
+{
+  "externalID": "123456",
+  "emails/primary": "john@doe.com",
+  "sendMail": false,
+  "avatar": "https://boredhumans.b-cdn.net/apes/4511.png",  
+  "firstName": "John",
+  "lastName": "Doe",
+  "position": "Developer",
+  "department": "Development & Research"
+}
